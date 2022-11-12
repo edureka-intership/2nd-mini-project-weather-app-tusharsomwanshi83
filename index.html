@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Whether</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/index.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+
+<body onload="callAPIDefault()"
+style=" background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.621), rgba(0, 0, 0, 0.237)), url(./Material/Images/background.jpg);">
+
+
+    <div class="containers">
+        <form action="">
+            <input type="search" id="city" required>
+            <i class="fa fa-search" onclick="callApi()"></i>
+        </form>
+        
+        <div class="info">
+            <h2 id="cityname"></h2>
+            <h2 id="celcius"></h2>
+            <div class="description">
+                <img src="" alt="" id="imgs">
+                <span id="weather_descriptions"><span>
+                </div>
+                
+                <div class="other">
+                    <div class="humidity">
+                        <span id="humidity"></span>
+                    </div>
+                    <div class="wind_speed">
+                        <span id="wind_speed"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+</body>
+
+</html>
